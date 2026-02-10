@@ -3,9 +3,9 @@ function SideBar({activePage , onPageChange , onLogout}) { //probs
         {id : "dashboard" , label : "الداشبورد"},
         {id : "products" , label : "المنتجات"},
         {id : "orders" , label : "الطلبات"},
-        {id : "users" , label : "المستخدمين"},
-        {id : "profiles" , label : "الحسابات"},
-        {id : "weather" , label: "الطقس"},
+        // {id : "users" , label : "المستخدمين"},
+        // {id : "profiles" , label : "الحسابات"},
+        // {id : "weather" , label: "الطقس"},
         {id : "pcapi" , label: "البحث عن أجهزة"}
 
     ]; 

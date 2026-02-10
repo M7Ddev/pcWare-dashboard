@@ -410,6 +410,7 @@ body {
   padding: 6px 12px;
   font-size: 12px;
   margin: 0 2px;
+  display: inline-block;
 }
 
 /* ================================
@@ -488,9 +489,74 @@ body {
 /* ================================
    RESPONSIVE (Mobile)
 ================================ */
+@media (max-width: 1024px) {
+  .table th,
+  .table td {
+    padding: 12px 10px;
+    font-size: 13px;
+  }
+
+  .table td .btn-edit,
+  .table td .btn-delete {
+    padding: 5px 10px;
+    font-size: 11px;
+    margin: 2px;
+  }
+}
+
 @media (max-width: 768px) {
   .table {
-    font-size: 13px;
+    font-size: 12px;
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .table thead {
+    display: none;
+  }
+
+  .table tbody {
+    display: block;
+  }
+
+  .table tr {
+    display: block;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 12px;
+    border-radius: 8px;
+    background: #0f172a;
+    overflow: hidden;
+  }
+
+  .table td {
+    display: block;
+    text-align: left;
+    padding: 10px 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    position: relative;
+    padding-left: 35%;
+  }
+
+  .table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 12px;
+    font-weight: 700;
+    color: #c7d2fe;
+    font-size: 11px;
+  }
+
+  .table td:last-child {
+    border-bottom: none;
+  }
+
+  .table td .btn-edit,
+  .table td .btn-delete {
+    padding: 6px 10px;
+    font-size: 11px;
+    margin: 2px 2px;
+    display: inline-block;
   }
 
   .page-header {
@@ -501,6 +567,35 @@ body {
 
   .btn-add {
     width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .table td {
+    padding: 8px 12px;
+    padding-left: 40%;
+    font-size: 11px;
+  }
+
+  .table td::before {
+    font-size: 10px;
+    left: 10px;
+  }
+
+  .table td .btn-edit,
+  .table td .btn-delete {
+    padding: 5px 8px;
+    font-size: 10px;
+    margin: 2px 1px;
+  }
+
+  .page-header h2 {
+    font-size: 18px;
+  }
+
+  .btn-add {
+    font-size: 12px;
+    padding: 8px 12px;
   }
 }
 /* ================================

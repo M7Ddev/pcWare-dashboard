@@ -106,17 +106,17 @@ function ProductPage({products, setProducts}) {
                 <tbody>
                     {products.map((item) => (
                         <tr key={item.id}>
-                            <td>{item.name}</td>
-                            <td>{item.catagory}</td>
-                            <td>{item.price}</td>
-                            <td>{item.stock}</td>
-                            <td>
+                            <td data-label="المنتجات">{item.name}</td>
+                            <td data-label="الصنف">{item.catagory}</td>
+                            <td data-label="السعر">{item.price}</td>
+                            <td data-label="الكمية">{item.stock}</td>
+                            <td data-label="الحالة">
                                 <span className={item.acitve ? "badge-active" : "badge-inactive"}>
                                     {""}
                                     {item.acitve ? "Active" : "out of stock"}
                                 </span>
                             </td>
-                            <td>
+                            <td data-label="الاجرائات">
                                 <button className="btn-edit" onClick={() => openEditForm(item)}>Edit</button>
                                 <button className="btn-delete" onClick={() => deleteProducts(item.id)}>Delete</button>
                             </td>

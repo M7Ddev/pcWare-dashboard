@@ -32,13 +32,13 @@ const revenue = orders.reduce((total, order) => {
         );
     }
 
-        if (activePage === "weather") {
-        return (
-            <main className="main">
-                <WeatherApi />
-            </main>
-        );
-    }
+    //     if (activePage === "weather") {
+    //     return (
+    //         <main className="main">
+    //             <WeatherApi />
+    //         </main>
+    //     );
+    // }
 
     if (activePage === "pcapi") {
         return (

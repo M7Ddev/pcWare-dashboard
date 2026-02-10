@@ -115,29 +115,29 @@ function OrdersPage({orders, setOrders}) {
         <tbody>
           {orders.map((order) => (
             <tr key={order.id}>
-              <td>{order.id}</td>
-              <td>{order.customerName}</td>
-              <td>{order.email}</td>
-              <td>{order.date}</td>
-              <td>
+              <td data-label="رقم الطلب">{order.id}</td>
+              <td data-label="اسم العميل">{order.customerName}</td>
+              <td data-label="البريد الإلكتروني">{order.email}</td>
+              <td data-label="التاريخ">{order.date}</td>
+              <td data-label="المنتج">
                 {order.items.map((item, idx) => (
                   <div key={idx}>{item.product}</div>
                 ))}
               </td>
-              <td>
+              <td data-label="الكمية">
                 {order.items.map((item, idx) => (
                   <div key={idx}>{item.qty}</div>
                 ))}
               </td>
-              <td>${calculateTotal(order.items).toFixed(2)}</td>
-              <td>
+              <td data-label="السعر الإجمالي">${calculateTotal(order.items).toFixed(2)}</td>
+              <td data-label="الحالة">
                 <span
                   className={order.status === "completed" ? "badge-active" : order.status === "pending" ? "badge-pending" : "badge-cancelled"}
                 >
                   {order.status === "completed" ? "مكتمل" : order.status === "pending" ? "معلق" : "ملغي"}
                 </span>
               </td>
-              <td>
+              <td data-label="الإجراءات">
                 <button className="btn-edit" onClick={() => openEditForm(order)}>Edit</button>
                 <button
                   className="btn-delete"
