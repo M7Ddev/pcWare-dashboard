@@ -5,7 +5,7 @@ import Login from "./pages/Login";
 
 function App() {
   // Boolean مو string
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(true);
 
   return (
     <BrowserRouter>
@@ -23,7 +23,7 @@ function App() {
         {/* خله /dashboard بدل /DashboardLayouts (اسم route يكون واضح) */}
         <Route
           path="/dashboard"
-          element={isLoggedIn ? <DashBoardLayouts /> : <Navigate to="/login" replace />}
+          element={isLoggedIn ? <DashBoardLayouts setIsLoggedIn={setIsLoggedIn} /> : <Navigate to="/login" replace />}
         />
       </Routes>
     </BrowserRouter>

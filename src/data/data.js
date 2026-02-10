@@ -83,63 +83,103 @@ export const productsData =[
 
 export const OrdersData = [
     {
-        OrderID: 1,
-        ProductId: 1,
-        Quantity : 30 ,
-        Status : true
+        id: "ORD-001",
+        customerName: "Mohammed",
+        email: "mohammad@gmail.com",
+        date: "2026-01-20",
+        status: "completed",
+        items: [
+            { product: "Asus", qty: 30, price: 5000 }
+        ]
     },
     {
-        OrderID: 2,
-        ProductId: 2,
-        Quantity : 45 ,
-        Status : true
+        id: "ORD-002",
+        customerName: "Ahmed",
+        email: "ahmed@gmail.com",
+        date: "2026-01-21",
+        status: "completed",
+        items: [
+            { product: "Dell", qty: 45, price: 4500 }
+        ]
     },
     {
-        OrderID: 3,
-        ProductId: 3,
-        Quantity : 25 ,
-        Status : true
+        id: "ORD-003",
+        customerName: "Fatima",
+        email: "fatima@gmail.com",
+        date: "2026-01-22",
+        status: "completed",
+        items: [
+            { product: "HP", qty: 25, price: 4200 }
+        ]
     },
     {
-        OrderID: 4,
-        ProductId: 4,
-        Quantity : 50 ,
-        Status : true
+        id: "ORD-004",
+        customerName: "Ali",
+        email: "ali@gmail.com",
+        date: "2026-01-23",
+        status: "completed",
+        items: [
+            { product: "Lenovo", qty: 50, price: 3800 }
+        ]
     },
     {
-        OrderID: 5,
-        ProductId: 5,
-        Quantity : 15 ,
-        Status : false
+        id: "ORD-005",
+        customerName: "Layla",
+        email: "layla@gmail.com",
+        date: "2026-01-24",
+        status: "pending",
+        items: [
+            { product: "Apple MacBook", qty: 15, price: 8000 }
+        ]
     },
     {
-        OrderID: 6,
-        ProductId: 6,
-        Quantity : 35 ,
-        Status : true
+        id: "ORD-006",
+        customerName: "Omar",
+        email: "omar@gmail.com",
+        date: "2026-01-25",
+        status: "completed",
+        items: [
+            { product: "Acer", qty: 35, price: 3500 }
+        ]
     },
     {
-        OrderID: 7,
-        ProductId: 7,
-        Quantity : 20 ,
-        Status : true
+        id: "ORD-007",
+        customerName: "Mariam",
+        email: "mariam@gmail.com",
+        date: "2026-01-26",
+        status: "completed",
+        items: [
+            { product: "MSI", qty: 20, price: 6000 }
+        ]
     },
     {
-        OrderID: 8,
-        ProductId: 8,
-        Quantity : 12 ,
-        Status : true
+        id: "ORD-008",
+        customerName: "Hassan",
+        email: "hassan@gmail.com",
+        date: "2026-01-27",
+        status: "completed",
+        items: [
+            { product: "Razer", qty: 12, price: 7500 }
+        ]
     },
     {
-        OrderID: 9,
-        ProductId: 9,
-        Quantity : 40 ,
-        Status : false
+        id: "ORD-009",
+        customerName: "Noor",
+        email: "noor@gmail.com",
+        date: "2026-01-28",
+        status: "pending",
+        items: [
+            { product: "Sony Vaio", qty: 40, price: 4800 }
+        ]
     },
     {
-        OrderID: 10,
-        ProductId: 10,
-        Quantity : 28 ,
-        Status : true
+        id: "ORD-010",
+        customerName: "Zainab",
+        email: "zainab@gmail.com",
+        date: "2026-01-29",
+        status: "completed",
+        items: [
+            { product: "Samsung", qty: 28, price: 4000 }
+        ]
     }
 ]

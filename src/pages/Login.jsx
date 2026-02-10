@@ -21,6 +21,9 @@ function Login({ setIsLoggedIn }) {
 
   return (
     <div className="login-page">
+      <div className="login-brand">
+        <h1> dashboard -  وير pc </h1>
+      </div>
       <div className="login-card">
         <h2>تسجيل دخول</h2>
 

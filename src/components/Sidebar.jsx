@@ -5,7 +5,8 @@ function SideBar({activePage , onPageChange , onLogout}) { //probs
         {id : "orders" , label : "الطلبات"},
         {id : "users" , label : "المستخدمين"},
         {id : "profiles" , label : "الحسابات"},
-        {id : "weather" , label: "الطقس"}
+        {id : "weather" , label: "الطقس"},
+        {id : "pcapi" , label: "البحث عن أجهزة"}
 
     ]; 
     return(

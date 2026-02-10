@@ -2,8 +2,7 @@ import { productsData } from "../data/data"
 import { useState } from "react"
 import ProductModel from "./ProductModel";
 
-function ProductPage() {
-    const [products, setProducts] = useState(productsData);
+function ProductPage({products, setProducts}) {
     const [formData, setFormData] = useState({
         name: "",
         catagory: "",
@@ -21,12 +20,12 @@ function ProductPage() {
             setProducts( //using map to check all the values in the array and update it 
                 products.map((item) => item.id === editingProduct ?
                     {
-                        ...item.id,
+                        ...item,
                         name: formData.name,
                         catagory: formData.catagory,
                         price: formData.price,
                         stock: formData.stock,
-                        acitve: formData.stock>0,
+                        acitve: formData.acitve === "true" || formData.acitve === true,
                     } : item
                 )
                     
@@ -40,7 +39,7 @@ function ProductPage() {
                         catagory: formData.catagory,
                         price: formData.price,
                         stock: formData.stock,
-                        acitve: formData.stock>0,
+                        acitve: formData.acitve === "true" || formData.acitve === true,
                     };
                     setProducts([...products,newProduct]) //take the old products and add the new
     }
