@@ -1,7 +1,7 @@
 
 import { useState , useEffect } from "react";
 import SideBar from "../components/Sidebar";
-import Header from "../components/header";
+import Header from "../components/Header";
 import MainContent from "../components/MainContent";
 import { useNavigate } from "react-router-dom";
 import { productsData, OrdersData } from "../data/data";
